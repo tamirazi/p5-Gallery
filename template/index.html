@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"
+    />
+    <!-- 'nano' theme -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Template</h1>
+
+    <div class="container">
+      <div class="panel">
+        <div class="color-pickers">
+          <div class="color-picker">
+            <span>background</span>
+            <div class="bg-color-picker"></div>
+          </div>
+          <div class="color-picker">
+            <span>main</span>
+            <div class="main-color-picker"></div>
+          </div>
+        </div>
+
+        <input id="value1" type="range" min="0" max="100" step="1" value="10" />
+        <input id="value2" type="range" min="0" max="100" step="1" value="10" />
+      </div>
+      <div id="myCanvas"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.es5.min.js"></script>
+    <script src="../p5.min.js"></script>
+    <script src="color-pickers.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>
