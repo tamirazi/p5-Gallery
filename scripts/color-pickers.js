@@ -51,8 +51,12 @@ const main = Pickr.create({
   },
 });
 
-main.on("change", (color) => {
-  mainColor = color.toHEXA().toString();
-  clear();
-  draw();
-});
+main
+  .on("change", (color) => {
+    mainColor = color.toHEXA().toString();
+    clear();
+    draw();
+  })
+  .on("save", (color, instance) => {
+    main.hide();
+  });
