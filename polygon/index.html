@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template</title>
+    <title>Polygon</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"
@@ -17,18 +17,21 @@
           class="col-md-6 d-flex justify-content-between align-items-center p-3"
         >
           <div class="panel">
-            <h3>Name</h3>
-            <a href="https://en.wikipedia.org/wiki/Cardioid">Learn more...</a>
+            <h3>Polygon with Perlin noise</h3>
+            <a href="https://en.wikipedia.org/wiki/Cardioid">Code...</a>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien
-              faucibus et molestie ac feugiat sed. Porttitor leo a diam
-              sollicitudin. Suscipit tellus mauris a diam maecenas sed enim ut.
-              Ultrices mi tempus imperdiet nulla malesuada pellentesque elit.
+              A polygon is a shape made up of three or more straight lines with
+              no curved, bent or open sides/edges. All of a polygons angles and
+              sides are equal to each other, and and all regular polygon angles
+              convex.
+            </p>
+            <p>
+              This is a p5 sketch that create a (Shapes) numbers of polygons and
+              adding noise for each one rotation.
             </p>
             <div class="row">
               <div class="col-7">
-                <label for="value1">Points</label>
+                <label for="value1">Lines</label>
                 <input
                   class="custom-range my-1"
                   id="value1"
@@ -136,6 +139,6 @@
     <script src="../p5.min.js"></script>
     <script src="../scripts/color-pickers.js"></script>
     <script src="../scripts/sliders-values.js"></script>
-    <script src="sketch.js"></script>
+    <script id="sketch" src="sketch.js"></script>
   </body>
 </html>

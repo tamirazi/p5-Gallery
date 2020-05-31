@@ -20,10 +20,12 @@ function draw() {
   drawStroke();
   stroke(mainColor);
 
+  //delete this if you copy the code
   numPoints = values[0];
   numOfShapes = values[1];
   strokeWeight(values[2]);
   inc = values[3];
+  //delete this if you copy the code
 
   for (let i = 0; i < numOfShapes; i++) {
     polygon(numPoints, map(i, 0, numOfShapes - 1, minRadius, maxRadius));

@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-$font-family-base: "Raleway", sans-serif;
+$font-family-base: 'Raleway', sans-serif;
 
 $custom-range-thumb-bg: black;
 $custom-range-track-bg: black;
@@ -10,7 +10,7 @@ $custom-range-track-height: 0.11rem;
 
 $body-bg: #e5e5e5;
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import '../node_modules/bootstrap/scss/bootstrap';
 
 html,
 body {
