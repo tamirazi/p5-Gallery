@@ -1,10 +1,10 @@
-let backgroundColor = '#ffffff';
-let mainColor = '#000000';
+let backgroundColor = "#fffafa";
+let mainColor = "#333333";
 
 const bg = Pickr.create({
-  el: '.bg-color-picker',
-  theme: 'nano', // or 'monolith', or 'nano'
-
+  el: ".bg-color-picker",
+  theme: "nano", // or 'monolith', or 'nano'
+  default: "#fffafa",
   components: {
     // Main components
     preview: true,
@@ -22,16 +22,18 @@ const bg = Pickr.create({
   },
 });
 
-bg.on('change', (color) => {
+bg.on("change", (color) => {
   backgroundColor = color.toHEXA().toString();
   clear();
   draw();
+}).on("save", (color, instance) => {
+  bg.hide();
 });
 
 const main = Pickr.create({
-  el: '.main-color-picker',
-  theme: 'nano', // or 'monolith', or 'nano'
-
+  el: ".main-color-picker",
+  theme: "nano", // or 'monolith', or 'nano'
+  default: "#333333",
   components: {
     // Main components
     preview: true,
@@ -49,7 +51,7 @@ const main = Pickr.create({
   },
 });
 
-main.on('change', (color) => {
+main.on("change", (color) => {
   mainColor = color.toHEXA().toString();
   clear();
   draw();

@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$font-family-base: "Raleway", sans-serif;
+
+$custom-range-thumb-bg: black;
+$custom-range-track-bg: black;
+$custom-range-thumb-width: 0.5rem;
+$custom-range-thumb-height: 0.5rem;
+$custom-range-track-height: 0.11rem;
+
+$body-bg: #e5e5e5;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+html,
+body {
+  height: 100%;
+}
+canvas {
+  outline: black 5px solid;
+  border: white 10px solid;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+.pickr {
+  border: black 2px solid;
+  border-radius: 5px;
+}
