@@ -19,6 +19,3 @@ function drawStroke() {
   line(0, height, width, height);
 }
 
-function saveMyCanvas() {
-  saveCanvas("myCanvas", "png");
-}
