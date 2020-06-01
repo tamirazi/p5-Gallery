@@ -1,12 +1,13 @@
+let sketch;
+
 function setup() {
-  const sketch = createCanvas(400 - 45, 550 - 45);
+  sketch = createCanvas(400 - 45, 550 - 45);
   sketch.parent("myCanvas");
 }
 
 function draw() {
   background(backgroundColor);
   drawStroke();
-
   noLoop();
 }
 
@@ -16,4 +17,8 @@ function drawStroke() {
   line(0, 0, 0, height);
   line(width, 0, width, height);
   line(0, height, width, height);
+}
+
+function saveMyCanvas() {
+  saveCanvas("myCanvas", "png");
 }
