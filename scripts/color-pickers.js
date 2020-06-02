@@ -25,6 +25,7 @@ const bg = Pickr.create({
 bg.on("change", (color) => {
   backgroundColor = color.toHEXA().toString();
   clear();
+  setup();
   draw();
 }).on("save", (color, instance) => {
   bg.hide();
@@ -55,6 +56,7 @@ main
   .on("change", (color) => {
     mainColor = color.toHEXA().toString();
     clear();
+    setup();
     draw();
   })
   .on("save", (color, instance) => {

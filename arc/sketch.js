@@ -4,17 +4,15 @@ function setup() {
   const sketch = createCanvas(400 - 45, 550 - 45);
   sketch.parent("myCanvas");
 
-  step = (TWO_PI / radius) * 2;
-}
+  let step = (TWO_PI / radius) * 2;
 
-function draw() {
   randomSeed(99);
   let stratPoint = random(100);
   radius = 300;
   background(backgroundColor);
   drawStroke();
   stroke(mainColor);
-  let step = (TWO_PI / radius) * values[0];
+  step = (TWO_PI / radius) * values[0];
   let margin = values[1];
 
   noFill();
@@ -26,9 +24,9 @@ function draw() {
     radius -= margin;
     pop();
   }
-
-  noLoop();
 }
+
+function draw() {}
 
 function drawStroke() {
   stroke(0, 50);

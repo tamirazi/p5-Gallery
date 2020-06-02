@@ -7,32 +7,28 @@ let inc = 0.005;
 
 function setup() {
   const sketch = createCanvas(400 - 45, 550 - 45);
-  sketch.parent('myCanvas');
+  sketch.parent("myCanvas");
   numPoints = 3;
   numOfShapes = 20;
   maxRadius = 150;
   minRadius = 5;
-}
 
-function draw() {
   xoff = 0;
   background(backgroundColor);
   drawStroke();
   stroke(mainColor);
 
-  //delete this if you copy the code
   numPoints = values[0];
   numOfShapes = values[1];
   strokeWeight(values[2]);
   inc = values[3];
-  //delete this if you copy the code
 
   for (let i = 0; i < numOfShapes; i++) {
     polygon(numPoints, map(i, 0, numOfShapes - 1, minRadius, maxRadius));
   }
-
-  noLoop();
 }
+
+function draw() {}
 
 function polygon(nbPoints, radius) {
   push();

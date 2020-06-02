@@ -15,6 +15,7 @@ value1.addEventListener("change", (e) => {
   values[0] = Number(e.target.value);
   ivalue1.value = Number(e.target.value);
   clear();
+  setup();
   draw();
 });
 
@@ -22,6 +23,7 @@ value2.addEventListener("change", (e) => {
   values[1] = Number(e.target.value);
   ivalue2.value = Number(e.target.value);
   clear();
+  setup();
   draw();
 });
 
@@ -43,6 +45,7 @@ if (value3 && value4) {
     values[2] = Number(e.target.value);
     ivalue3.value = Number(e.target.value);
     clear();
+    setup();
     draw();
   });
 
@@ -50,6 +53,7 @@ if (value3 && value4) {
     values[3] = Number(e.target.value);
     ivalue4.value = Number(e.target.value);
     clear();
+    setup();
     draw();
   });
 

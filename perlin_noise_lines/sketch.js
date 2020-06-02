@@ -12,9 +12,7 @@ let amp = 100; //maximum amplitude
 function setup() {
   const sketch = createCanvas(400 - 45, 550 - 45);
   sketch.parent("myCanvas");
-}
 
-function draw() {
   initLine();
   background(backgroundColor);
   drawStroke();
@@ -36,9 +34,9 @@ function draw() {
     endShape();
     pop();
   }
-
-  noLoop();
 }
+
+function draw() {}
 
 function initLine() {
   xoff = 0;

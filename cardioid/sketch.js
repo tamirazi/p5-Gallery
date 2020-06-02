@@ -10,9 +10,7 @@ function setup() {
   delta = TWO_PI / totalPoints;
   radius = width / 2 - 30;
   factor = 0.7;
-}
 
-function draw() {
   background(backgroundColor);
   drawStroke();
   stroke(mainColor);
@@ -25,13 +23,13 @@ function draw() {
   for (let p = 0; p < totalPoints; p++) {
     let v = getVector(p);
     let b = getVector(p * factor);
-    // drawPoints(v);
     strokeWeight(0.8);
     line(v.x, v.y, b.x, b.y);
   }
   pop();
-  noLoop();
 }
+
+function draw() {}
 
 function getVector(index) {
   let angle = map(index % totalPoints, 0, totalPoints, 0, TWO_PI);
