@@ -1,9 +1,9 @@
 dist
 .cache
 
-scripts
-firebase.json
-.firebaserc
-.firebase
+# scripts
+# firebase.json
+# .firebaserc
+# .firebase
 
 node_modules
