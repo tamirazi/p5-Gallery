@@ -3,4 +3,8 @@ dist
 
 scripts
 
+firebase.json
+.firebaserc
+.firebase
+
 node_modules
