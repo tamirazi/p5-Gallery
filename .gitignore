@@ -2,7 +2,6 @@ dist
 .cache
 
 scripts
-
 firebase.json
 .firebaserc
 .firebase
