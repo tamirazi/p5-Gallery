@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cardioid</title>
+    <title>Bezier</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"
     />
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
   </head>
   <body>
     <div class="container h-100">
@@ -17,16 +17,8 @@
           class="col-md-6 d-flex justify-content-between align-items-center p-3"
         >
           <div class="panel">
-            <h3>Times Tables Cardioid</h3>
-            <a
-              href="https://www.youtube.com/watch?v=qhbuKbxJsk8"
-              target="_blank"
-              >Video</a
-            >
-            |
-            <a
-              href="https://editor.p5js.org/tamir.azizi/sketches/1FOKDR9-v"
-              target="_blank"
+            <h3>Bezier with Perlin Noise</h3>
+            <a href="https://editor.p5js.org/tamir.azizi/sketches/dSm1sbRKJ"
               >Code</a
             >
             |
@@ -34,21 +26,22 @@
               >Download</a
             >
             |
-            <a href="../index.html">Gallery</a>
+            <a href="/index.html">Gallery</a>
             <p>
-              Cardioid using times tables calculations.
+              Simple p5 Bezier with Perlin noise. Keep the color opacity low for
+              better results.
             </p>
             <div class="row">
               <div class="col-7">
-                <label for="value1">Factor</label>
+                <label for="value1">Frames</label>
                 <input
                   class="custom-range my-1"
                   id="value1"
                   type="range"
-                  min="0.1"
-                  max="50"
-                  step="0.1"
-                  value="0.7"
+                  min="10"
+                  max="1500"
+                  step="1"
+                  value="1000"
                 />
               </div>
               <div class="col-5 d-flex align-items-center">
@@ -56,19 +49,19 @@
                   id="input-value1"
                   class="form-control form-control-sm"
                   type="number"
-                  step="0.1"
+                  step="1"
                 />
               </div>
               <div class="col-7">
-                <label for="value2">Points</label>
+                <label for="value2">Multiplyer 1</label>
                 <input
                   class="custom-range my-1"
                   id="value2"
                   type="range"
-                  min="0"
-                  max="200"
-                  step="1"
-                  value="100"
+                  min="0.01"
+                  max="10"
+                  step="0.1"
+                  value="0.01"
                 />
               </div>
               <div class="col-5 d-flex align-items-center">
@@ -76,6 +69,49 @@
                   id="input-value2"
                   class="form-control form-control-sm"
                   type="number"
+                  step="0.1"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-7">
+                <label for="value3">Multiplyer 2</label>
+                <input
+                  class="custom-range my-1"
+                  id="value3"
+                  type="range"
+                  min="0.1"
+                  max="10"
+                  step="0.1"
+                  value="2"
+                />
+              </div>
+              <div class="col-5 d-flex align-items-center">
+                <input
+                  id="input-value3"
+                  class="form-control form-control-sm"
+                  type="number"
+                  step="0.1"
+                />
+              </div>
+              <div class="col-7">
+                <label for="value4">Amp</label>
+                <input
+                  class="custom-range my-1"
+                  id="value4"
+                  type="range"
+                  min="0.001"
+                  max="0.1"
+                  step="0.001"
+                  value="0.005"
+                />
+              </div>
+              <div class="col-5 d-flex align-items-center">
+                <input
+                  id="input-value4"
+                  class="form-control form-control-sm"
+                  type="number"
+                  step="0.001"
                 />
               </div>
             </div>
@@ -102,9 +138,9 @@
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.es5.min.js"></script>
-    <script src="../scripts/p5.min.js"></script>
-    <script src="../scripts/color-pickers.js"></script>
-    <script src="../scripts/sliders-values.js"></script>
+    <script src="/scripts/p5.min.js"></script>
+    <script src="/scripts/color-pickers.js"></script>
+    <script src="/scripts/sliders-values.js"></script>
     <script src="sketch.js"></script>
   </body>
 </html>
